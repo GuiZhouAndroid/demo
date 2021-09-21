@@ -1,0 +1,39 @@
+# SpringBoot资源配置
+spring:
+  datasource:
+    name: testspringboot  #数据库名
+    url: jdbc:mysql://localhost:3306/testspringboot?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC #url
+    username: root  #用户名
+    password: root  #密码
+    driver-class-name: com.mysql.cj.jdbc.Driver  #数据库链接驱动
+
+  # 数据库框架
+
+  #开启加密验证
+  mail:
+    username: 1210762604@qq.com
+    password: djqjmmprprwijgcd
+    host: smtp.qq.com
+    default-encoding: UTF-8
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.starttls.enable: true
+      mail.smtp.starttls.required: true
+      mail.smtp.socketFactory.port: 465
+      mail.smtp.socketFactory.class: javax.net.ssl.SSLSocketFactory
+      mail.smtp.socketFactory.fallback: false
+      mail.smtp.ssl.enable=true:
+# yml开启加密验证
+#        spring.mail.host=smtp.qq.com
+#        spring.mail.username=1210762604@qq.com
+#        spring.mail.password=djqjmmprprwijgcd
+#        spring.mail.default-encoding=UTF-8
+#        spring.mail.properties.mail.smtp.auth=true
+#        spring.mail.properties.mail.smtp.starttls.enable=true
+#        spring.mail.properties.mail.smtp.starttls.required= true
+#        spring.mail.properties.mail.smtp.socketFactory.port=465
+#        spring.mail.properties.mail.smtp.socketFactory.class= javax.net.ssl.SSLSocketFactory
+#        spring.mail.properties.mail.smtp.socketFactory.fallback=false
+#        spring.mail.properties.mail.smtp.ssl.enable=true:
+
+
