@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @create 2021-09-17-16:36
  */
 @RestController
-public class MaiController {
+public class MailController {
     @Autowired
     JavaMailSender javaMailSender;
 

@@ -19,7 +19,6 @@ import java.util.Set;
 @RestController
 @RequestMapping("/send")
 public class SMSController {
-
     @RequestMapping("/message")
     public String sendMessage() {
         //生产环境请求地址：app.cloopen.com

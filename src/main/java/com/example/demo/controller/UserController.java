@@ -16,12 +16,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 @RequestMapping("/user/")
 public class UserController {
-
     @RequestMapping("/index")
     public String show() {
         return "index";
     }
-
     //http://localhost:8080/user/register?username=张松&password=root
     //RequestParam(对应URL问号后面的 + = 号左边的username值，默认必须为空)——可以省略，会自动提取URL的参数，用于与形式参数区分，标识作用
     @RequestMapping("register")
@@ -36,7 +34,6 @@ public class UserController {
         // 规定返回Json格式的数据——{"username":"张松","password":"root"}
         return "用户=" + user.getUsername() + ",密码=" + user.getPassword();//，把携带user数据的用户信息，返回至前端页面
     }
-
     @RequestMapping("register2")
     public String register2(String username,String password) {
         //select * from user where username = username} and password = password
@@ -44,7 +41,6 @@ public class UserController {
             return  "success";
         }
         return  "error";
-
         //return username.equals("张松") && password.equals("root") ? "success":"error";
     }
 }
