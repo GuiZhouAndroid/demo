@@ -9,7 +9,7 @@ spring:
 
   # 数据库框架
 
-  #开启加密验证
+  #yml开启加密验证
   mail:
     username: 1210762604@qq.com
     password: djqjmmprprwijgcd
@@ -23,7 +23,7 @@ spring:
       mail.smtp.socketFactory.class: javax.net.ssl.SSLSocketFactory
       mail.smtp.socketFactory.fallback: false
       mail.smtp.ssl.enable=true:
-# yml开启加密验证
+# properties开启加密验证
 #        spring.mail.host=smtp.qq.com
 #        spring.mail.username=1210762604@qq.com
 #        spring.mail.password=djqjmmprprwijgcd
